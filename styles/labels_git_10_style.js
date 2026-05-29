@@ -7,7 +7,7 @@ var style_labels_git_10 = function(feature, resolution){
         variables: {}
     };
     // Leemos el texto de tu columna 'nombre'
-    var value = feature.get("Name") !== null ? String(feature.get("Name")) : "";
+    var value = feature.get("labels_git") !== null ? String(feature.get("labels_git")) : "";
     
     var style = [ new ol.style.Style({
         // DIBUJAMOS EL PUNTO (Círculo rojo sólido)
