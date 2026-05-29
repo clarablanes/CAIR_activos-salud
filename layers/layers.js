@@ -135,24 +135,39 @@ var lyr_505_R2_8 = new ol.layer.Vector({
                 interactive: true,
                 title: '<img src="styles/legend/505_R2_8.png" /> 5-05_R2'
             });
-var format_505_R1_9 = new ol.format.GeoJSON();
-var features_505_R1_9 = format_505_R1_9.readFeatures(json_505_R1_9, 
+var format_labels_git_9 = new ol.format.GeoJSON();
+var features_labels_git_9 = format_labels_git_9.readFeatures(json_labels_git_9, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_505_R1_9 = new ol.source.Vector({
+var jsonSource_labels_git_9 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_505_R1_9.addFeatures(features_505_R1_9);
-var lyr_505_R1_9 = new ol.layer.Vector({
+jsonSource_labels_git_9.addFeatures(features_labels_git_9);
+var lyr_labels_git_9 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_505_R1_9, 
-                style: style_505_R1_9,
+                source:jsonSource_labels_git_9, 
+                style: style_labels_git_9,
+                popuplayertitle: 'labels_git',
+                interactive: true,
+                title: '<img src="styles/legend/labels_git_9.png" /> labels_git'
+            });
+var format_505_R1_10 = new ol.format.GeoJSON();
+var features_505_R1_10 = format_505_R1_10.readFeatures(json_505_R1_10, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_505_R1_10 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_505_R1_10.addFeatures(features_505_R1_10);
+var lyr_505_R1_10 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource_505_R1_10, 
+                style: style_505_R1_10,
                 popuplayertitle: '5-05_R1',
                 interactive: true,
-                title: '<img src="styles/legend/505_R1_9.png" /> 5-05_R1'
+                title: '<img src="styles/legend/505_R1_10.png" /> 5-05_R1'
             });
 
-lyr_OpenStreetMap_0.setVisible(true);lyr_2705_R2_1.setVisible(true);lyr_2705_R1_2.setVisible(true);lyr_2005_R3_3.setVisible(true);lyr_2005_R2_4.setVisible(true);lyr_img_20_05_R1_5.setVisible(true);lyr_2005_R1_6.setVisible(true);lyr_505_R3_7.setVisible(true);lyr_505_R2_8.setVisible(true);lyr_505_R1_9.setVisible(true);
-var layersList = [lyr_OpenStreetMap_0,lyr_2705_R2_1,lyr_2705_R1_2,lyr_2005_R3_3,lyr_2005_R2_4,lyr_img_20_05_R1_5,lyr_2005_R1_6,lyr_505_R3_7,lyr_505_R2_8,lyr_505_R1_9];
+lyr_OpenStreetMap_0.setVisible(true);lyr_2705_R2_1.setVisible(true);lyr_2705_R1_2.setVisible(true);lyr_2005_R3_3.setVisible(true);lyr_2005_R2_4.setVisible(true);lyr_img_20_05_R1_5.setVisible(true);lyr_2005_R1_6.setVisible(true);lyr_505_R3_7.setVisible(true);lyr_505_R2_8.setVisible(true);lyr_labels_git_9.setVisible(true);lyr_505_R1_10.setVisible(true);
+var layersList = [lyr_OpenStreetMap_0,lyr_2705_R2_1,lyr_2705_R1_2,lyr_2005_R3_3,lyr_2005_R2_4,lyr_img_20_05_R1_5,lyr_2005_R1_6,lyr_505_R3_7,lyr_505_R2_8,lyr_labels_git_9,lyr_505_R1_10];
 lyr_2705_R2_1.set('fieldAliases', {'fid': 'fid', 'name': 'name', 'cmt': 'cmt', 'desc': 'desc', 'src': 'src', 'link1_href': 'link1_href', 'link1_text': 'link1_text', 'link1_type': 'link1_type', 'link2_href': 'link2_href', 'link2_text': 'link2_text', 'link2_type': 'link2_type', 'number': 'number', 'type': 'type', 'geotracker_meta': 'geotracker_meta', });
 lyr_2705_R1_2.set('fieldAliases', {'fid': 'fid', 'name': 'name', 'cmt': 'cmt', 'desc': 'desc', 'src': 'src', 'link1_href': 'link1_href', 'link1_text': 'link1_text', 'link1_type': 'link1_type', 'link2_href': 'link2_href', 'link2_text': 'link2_text', 'link2_type': 'link2_type', 'number': 'number', 'type': 'type', 'geotracker_meta': 'geotracker_meta', });
 lyr_2005_R3_3.set('fieldAliases', {'fid': 'fid', 'name': 'name', 'cmt': 'cmt', 'desc': 'desc', 'src': 'src', 'link1_href': 'link1_href', 'link1_text': 'link1_text', 'link1_type': 'link1_type', 'link2_href': 'link2_href', 'link2_text': 'link2_text', 'link2_type': 'link2_type', 'number': 'number', 'type': 'type', 'geotracker_meta': 'geotracker_meta', });
@@ -161,7 +176,8 @@ lyr_img_20_05_R1_5.set('fieldAliases', {'fid': 'fid', 'photo': 'photo', 'filenam
 lyr_2005_R1_6.set('fieldAliases', {'fid': 'fid', 'name': 'name', 'cmt': 'cmt', 'desc': 'desc', 'src': 'src', 'link1_href': 'link1_href', 'link1_text': 'link1_text', 'link1_type': 'link1_type', 'link2_href': 'link2_href', 'link2_text': 'link2_text', 'link2_type': 'link2_type', 'number': 'number', 'type': 'type', 'geotracker_meta': 'geotracker_meta', 'Ruta': 'Ruta', });
 lyr_505_R3_7.set('fieldAliases', {'id': 'id', });
 lyr_505_R2_8.set('fieldAliases', {'id': 'id', });
-lyr_505_R1_9.set('fieldAliases', {'id': 'id', });
+lyr_labels_git_9.set('fieldAliases', {'fid': 'fid', 'Label': 'Label', });
+lyr_505_R1_10.set('fieldAliases', {'id': 'id', });
 lyr_2705_R2_1.set('fieldImages', {'fid': 'TextEdit', 'name': 'TextEdit', 'cmt': 'TextEdit', 'desc': 'TextEdit', 'src': 'TextEdit', 'link1_href': 'TextEdit', 'link1_text': 'TextEdit', 'link1_type': 'TextEdit', 'link2_href': 'TextEdit', 'link2_text': 'TextEdit', 'link2_type': 'TextEdit', 'number': 'Range', 'type': 'TextEdit', 'geotracker_meta': 'TextEdit', });
 lyr_2705_R1_2.set('fieldImages', {'fid': 'TextEdit', 'name': 'TextEdit', 'cmt': 'TextEdit', 'desc': 'TextEdit', 'src': 'TextEdit', 'link1_href': 'TextEdit', 'link1_text': 'TextEdit', 'link1_type': 'TextEdit', 'link2_href': 'TextEdit', 'link2_text': 'TextEdit', 'link2_type': 'TextEdit', 'number': 'Range', 'type': 'TextEdit', 'geotracker_meta': 'TextEdit', });
 lyr_2005_R3_3.set('fieldImages', {'fid': 'TextEdit', 'name': 'TextEdit', 'cmt': 'TextEdit', 'desc': 'TextEdit', 'src': 'TextEdit', 'link1_href': 'TextEdit', 'link1_text': 'TextEdit', 'link1_type': 'TextEdit', 'link2_href': 'TextEdit', 'link2_text': 'TextEdit', 'link2_type': 'TextEdit', 'number': 'Range', 'type': 'TextEdit', 'geotracker_meta': 'TextEdit', });
@@ -170,7 +186,8 @@ lyr_img_20_05_R1_5.set('fieldImages', {'fid': 'Hidden', 'photo': 'ExternalResour
 lyr_2005_R1_6.set('fieldImages', {'fid': 'TextEdit', 'name': 'TextEdit', 'cmt': 'TextEdit', 'desc': 'TextEdit', 'src': 'TextEdit', 'link1_href': 'TextEdit', 'link1_text': 'TextEdit', 'link1_type': 'TextEdit', 'link2_href': 'TextEdit', 'link2_text': 'TextEdit', 'link2_type': 'TextEdit', 'number': 'Range', 'type': 'TextEdit', 'geotracker_meta': 'TextEdit', 'Ruta': 'TextEdit', });
 lyr_505_R3_7.set('fieldImages', {'id': 'TextEdit', });
 lyr_505_R2_8.set('fieldImages', {'id': 'TextEdit', });
-lyr_505_R1_9.set('fieldImages', {'id': 'TextEdit', });
+lyr_labels_git_9.set('fieldImages', {'fid': '', 'Label': '', });
+lyr_505_R1_10.set('fieldImages', {'id': 'TextEdit', });
 lyr_2705_R2_1.set('fieldLabels', {'fid': 'no label', 'name': 'no label', 'cmt': 'no label', 'desc': 'no label', 'src': 'no label', 'link1_href': 'no label', 'link1_text': 'no label', 'link1_type': 'no label', 'link2_href': 'no label', 'link2_text': 'no label', 'link2_type': 'no label', 'number': 'no label', 'type': 'no label', 'geotracker_meta': 'no label', });
 lyr_2705_R1_2.set('fieldLabels', {'fid': 'no label', 'name': 'no label', 'cmt': 'no label', 'desc': 'no label', 'src': 'no label', 'link1_href': 'no label', 'link1_text': 'no label', 'link1_type': 'no label', 'link2_href': 'no label', 'link2_text': 'no label', 'link2_type': 'no label', 'number': 'no label', 'type': 'no label', 'geotracker_meta': 'no label', });
 lyr_2005_R3_3.set('fieldLabels', {'fid': 'no label', 'name': 'no label', 'cmt': 'no label', 'desc': 'no label', 'src': 'no label', 'link1_href': 'no label', 'link1_text': 'no label', 'link1_type': 'no label', 'link2_href': 'no label', 'link2_text': 'no label', 'link2_type': 'no label', 'number': 'no label', 'type': 'no label', 'geotracker_meta': 'no label', });
@@ -179,7 +196,8 @@ lyr_img_20_05_R1_5.set('fieldLabels', {'photo': 'no label', 'Categoria': 'no lab
 lyr_2005_R1_6.set('fieldLabels', {'fid': 'no label', 'name': 'no label', 'cmt': 'no label', 'desc': 'no label', 'src': 'no label', 'link1_href': 'no label', 'link1_text': 'no label', 'link1_type': 'no label', 'link2_href': 'no label', 'link2_text': 'no label', 'link2_type': 'no label', 'number': 'no label', 'type': 'no label', 'geotracker_meta': 'no label', 'Ruta': 'no label', });
 lyr_505_R3_7.set('fieldLabels', {'id': 'no label', });
 lyr_505_R2_8.set('fieldLabels', {'id': 'no label', });
-lyr_505_R1_9.set('fieldLabels', {'id': 'no label', });
-lyr_505_R1_9.on('precompose', function(evt) {
+lyr_labels_git_9.set('fieldLabels', {'fid': 'no label', 'Label': 'inline label - always visible', });
+lyr_505_R1_10.set('fieldLabels', {'id': 'no label', });
+lyr_505_R1_10.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });
