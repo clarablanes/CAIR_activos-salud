@@ -1,0 +1,17 @@
+{
+"type": "FeatureCollection",
+"name": "labels",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "fid": 1, "Label": "1º de Mayo", "auxiliary_storage_labeling_positionx": -0.7098407375796103, "auxiliary_storage_labeling_positiony": 38.274693877638498 }, "geometry": { "type": "Point", "coordinates": [ -0.708745333883766, 38.2744903217976 ] } },
+{ "type": "Feature", "properties": { "fid": 2, "Label": "Polivalente", "auxiliary_storage_labeling_positionx": -0.71237090861032759, "auxiliary_storage_labeling_positiony": 38.269671227208448 }, "geometry": null },
+{ "type": "Feature", "properties": { "fid": 3, "Label": "CS San Fermín", "auxiliary_storage_labeling_positionx": -0.7061319838381469, "auxiliary_storage_labeling_positiony": 38.268649283046635 }, "geometry": { "type": "Point", "coordinates": [ -0.706401051827931, 38.268788404346537 ] } },
+{ "type": "Feature", "properties": { "fid": 4, "Label": "CS Carrús", "auxiliary_storage_labeling_positionx": -0.71011701445333575, "auxiliary_storage_labeling_positiony": 38.277524096704532 }, "geometry": { "type": "Point", "coordinates": [ -0.710126979934439, 38.277976123583798 ] } },
+{ "type": "Feature", "properties": { "fid": 5, "Label": "Cáritas", "auxiliary_storage_labeling_positionx": -0.70411882815803339, "auxiliary_storage_labeling_positiony": 38.278949407189749 }, "geometry": null },
+{ "type": "Feature", "properties": { "fid": 6, "Label": "Parque 'La Rata'", "auxiliary_storage_labeling_positionx": -0.70127215810415255, "auxiliary_storage_labeling_positiony": 38.270811070986042 }, "geometry": { "type": "Point", "coordinates": [ -0.700704125681274, 38.271278787195243 ] } },
+{ "type": "Feature", "properties": { "fid": 7, "Label": "Polivalente", "auxiliary_storage_labeling_positionx": null, "auxiliary_storage_labeling_positiony": null }, "geometry": null },
+{ "type": "Feature", "properties": { "fid": 8, "Label": "Polivalente", "auxiliary_storage_labeling_positionx": -0.71270800692099023, "auxiliary_storage_labeling_positiony": 38.268718450598364 }, "geometry": null },
+{ "type": "Feature", "properties": { "fid": 9, "Label": "Cáritas", "auxiliary_storage_labeling_positionx": null, "auxiliary_storage_labeling_positiony": null }, "geometry": { "type": "Point", "coordinates": [ -0.703724851118711, 38.279010598434589 ] } },
+{ "type": "Feature", "properties": { "fid": 10, "Label": "Polivalente", "auxiliary_storage_labeling_positionx": null, "auxiliary_storage_labeling_positiony": null }, "geometry": { "type": "Point", "coordinates": [ -0.712653960823476, 38.270238328713702 ] } }
+]
+}
