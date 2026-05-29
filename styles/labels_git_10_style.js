@@ -6,26 +6,26 @@ var style_labels_git_10 = function(feature, resolution){
         feature: feature,
         variables: {}
     };
+    // Leemos el texto de tu columna 'nombre'
+    var value = feature.get("nombre") !== null ? String(feature.get("nombre")) : "";
     
-    var labelText = ""; 
-    var value = feature.get("");
-    var labelFont = "19.5px \'Open Sans\', sans-serif";
-    var labelFill = "#323232";
-    var bufferColor = "";
-    var bufferWidth = 0;
-    var textAlign = "left";
-    var offsetX = 0;
-    var offsetY = 0;
-    var placement = 'point';
-    if (feature.get("Label") !== null) {
-        labelText = String(feature.get("Label"));
-    }
     var style = [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 8.0 + size,
-            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(255,255,255,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 1.52}), fill: new ol.style.Fill({color: 'rgba(0,0,0,1.0)'})}),
-        text: createTextStyle(feature, resolution, labelText, labelFont,
-                              labelFill, placement, bufferColor,
-                              bufferWidth)
+        // DIBUJAMOS EL PUNTO (Círculo rojo sólido)
+        image: new ol.style.Circle({
+            radius: 6.0,
+            fill: new ol.style.Fill({color: 'rgba(255, 0, 0, 1.0)'}),
+            stroke: new ol.style.Stroke({color: 'rgba(255, 255, 255, 1.0)', width: 2})
+        }),
+        // DIBUJAMOS EL TEXTO (Siempre visible arriba del punto)
+        text: new ol.style.Text({
+            font: '13px "Open Sans", sans-serif',
+            text: value,
+            fill: new ol.style.Fill({color: 'rgba(0, 0, 0, 1.0)'}),
+            stroke: new ol.style.Stroke({color: 'rgba(255, 255, 255, 1.0)', width: 3}),
+            offsetX: 0,
+            offsetY: -15,
+            textAlign: 'center'
+        })
     })];
 
     return style;
