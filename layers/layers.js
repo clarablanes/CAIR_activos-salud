@@ -196,7 +196,7 @@ lyr_img_20_05_R1_5.set('fieldLabels', {'photo': 'no label', 'Categoria': 'no lab
 lyr_2005_R1_6.set('fieldLabels', {'fid': 'no label', 'name': 'no label', 'cmt': 'no label', 'desc': 'no label', 'src': 'no label', 'link1_href': 'no label', 'link1_text': 'no label', 'link1_type': 'no label', 'link2_href': 'no label', 'link2_text': 'no label', 'link2_type': 'no label', 'number': 'no label', 'type': 'no label', 'geotracker_meta': 'no label', 'Ruta': 'no label', });
 lyr_505_R3_7.set('fieldLabels', {'id': 'no label', });
 lyr_505_R2_8.set('fieldLabels', {'id': 'no label', });
-lyr_labels_git_9.set('fieldLabels', {'fid': 'no label', 'Label': 'no label', });
+lyr_labels_git_9.set('fieldLabels', {'fid': 'no label', 'Label': 'inline label - always visible', });
 lyr_505_R1_10.set('fieldLabels', {'id': 'no label', });
 lyr_505_R1_10.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
