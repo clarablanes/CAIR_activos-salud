@@ -17,8 +17,8 @@ var style_2705_R2_1 = function(feature, resolution){
     var offsetX = 0;
     var offsetY = 0;
     var placement = 'line';
-    if (exp_label_2705_R2_1_eval_expression(context) !== null) {
-        labelText = String(exp_label_2705_R2_1_eval_expression(context));
+    if ("" !== null) {
+        labelText = String("");
     }
     var style = [ new ol.style.Style({
         stroke: new ol.style.Stroke({color: 'rgba(245,136,37,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 2.508}),
