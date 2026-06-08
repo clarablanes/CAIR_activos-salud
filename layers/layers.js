@@ -165,9 +165,24 @@ var lyr_labels_git_10 = new ol.layer.Vector({
                 interactive: true,
                 title: '<img src="styles/legend/labels_git_10.png" /> labels_git'
             });
+var format_img_5_05_roja_11 = new ol.format.GeoJSON();
+var features_img_5_05_roja_11 = format_img_5_05_roja_11.readFeatures(json_img_5_05_roja_11, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_img_5_05_roja_11 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_img_5_05_roja_11.addFeatures(features_img_5_05_roja_11);
+var lyr_img_5_05_roja_11 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource_img_5_05_roja_11, 
+                style: style_img_5_05_roja_11,
+                popuplayertitle: 'img_5_05_roja',
+                interactive: true,
+                title: '<img src="styles/legend/img_5_05_roja_11.png" /> img_5_05_roja'
+            });
 
-lyr_OpenStreetMap_0.setVisible(true);lyr_2705_R2_1.setVisible(true);lyr_2705_R1_2.setVisible(true);lyr_2005_R3_3.setVisible(true);lyr_2005_R2_4.setVisible(true);lyr_img_20_05_R1_5.setVisible(true);lyr_2005_R1_6.setVisible(true);lyr_505_R3_7.setVisible(true);lyr_505_R2_8.setVisible(true);lyr_505_R1_9.setVisible(true);lyr_labels_git_10.setVisible(true);
-var layersList = [lyr_OpenStreetMap_0,lyr_2705_R2_1,lyr_2705_R1_2,lyr_2005_R3_3,lyr_2005_R2_4,lyr_img_20_05_R1_5,lyr_2005_R1_6,lyr_505_R3_7,lyr_505_R2_8,lyr_505_R1_9,lyr_labels_git_10];
+lyr_OpenStreetMap_0.setVisible(true);lyr_2705_R2_1.setVisible(true);lyr_2705_R1_2.setVisible(true);lyr_2005_R3_3.setVisible(true);lyr_2005_R2_4.setVisible(true);lyr_img_20_05_R1_5.setVisible(true);lyr_2005_R1_6.setVisible(true);lyr_505_R3_7.setVisible(true);lyr_505_R2_8.setVisible(true);lyr_505_R1_9.setVisible(true);lyr_labels_git_10.setVisible(true);lyr_img_5_05_roja_11.setVisible(true);
+var layersList = [lyr_OpenStreetMap_0,lyr_2705_R2_1,lyr_2705_R1_2,lyr_2005_R3_3,lyr_2005_R2_4,lyr_img_20_05_R1_5,lyr_2005_R1_6,lyr_505_R3_7,lyr_505_R2_8,lyr_505_R1_9,lyr_labels_git_10,lyr_img_5_05_roja_11];
 lyr_2705_R2_1.set('fieldAliases', {'fid': 'fid', 'name': 'name', 'cmt': 'cmt', 'desc': 'desc', 'src': 'src', 'link1_href': 'link1_href', 'link1_text': 'link1_text', 'link1_type': 'link1_type', 'link2_href': 'link2_href', 'link2_text': 'link2_text', 'link2_type': 'link2_type', 'number': 'number', 'type': 'type', 'geotracker_meta': 'geotracker_meta', });
 lyr_2705_R1_2.set('fieldAliases', {'fid': 'fid', 'name': 'name', 'cmt': 'cmt', 'desc': 'desc', 'src': 'src', 'link1_href': 'link1_href', 'link1_text': 'link1_text', 'link1_type': 'link1_type', 'link2_href': 'link2_href', 'link2_text': 'link2_text', 'link2_type': 'link2_type', 'number': 'number', 'type': 'type', 'geotracker_meta': 'geotracker_meta', });
 lyr_2005_R3_3.set('fieldAliases', {'fid': 'fid', 'name': 'name', 'cmt': 'cmt', 'desc': 'desc', 'src': 'src', 'link1_href': 'link1_href', 'link1_text': 'link1_text', 'link1_type': 'link1_type', 'link2_href': 'link2_href', 'link2_text': 'link2_text', 'link2_type': 'link2_type', 'number': 'number', 'type': 'type', 'geotracker_meta': 'geotracker_meta', });
@@ -178,6 +193,7 @@ lyr_505_R3_7.set('fieldAliases', {'id': 'id', });
 lyr_505_R2_8.set('fieldAliases', {'id': 'id', });
 lyr_505_R1_9.set('fieldAliases', {'id': 'id', });
 lyr_labels_git_10.set('fieldAliases', {'fid': 'fid', 'Label': 'Label', 'auxiliary_storage_labeling_positionx': 'auxiliary_storage_labeling_positionx', 'auxiliary_storage_labeling_positiony': 'auxiliary_storage_labeling_positiony', });
+lyr_img_5_05_roja_11.set('fieldAliases', {'fid': 'fid', 'photo': 'photo', 'filename': 'filename', 'directory': 'directory', 'altitude': 'altitude', 'direction': 'direction', 'rotation': 'rotation', 'longitude': 'longitude', 'latitude': 'latitude', 'timestamp': 'timestamp', });
 lyr_2705_R2_1.set('fieldImages', {'fid': 'TextEdit', 'name': 'TextEdit', 'cmt': 'TextEdit', 'desc': 'TextEdit', 'src': 'TextEdit', 'link1_href': 'TextEdit', 'link1_text': 'TextEdit', 'link1_type': 'TextEdit', 'link2_href': 'TextEdit', 'link2_text': 'TextEdit', 'link2_type': 'TextEdit', 'number': 'Range', 'type': 'TextEdit', 'geotracker_meta': 'TextEdit', });
 lyr_2705_R1_2.set('fieldImages', {'fid': 'TextEdit', 'name': 'TextEdit', 'cmt': 'TextEdit', 'desc': 'TextEdit', 'src': 'TextEdit', 'link1_href': 'TextEdit', 'link1_text': 'TextEdit', 'link1_type': 'TextEdit', 'link2_href': 'TextEdit', 'link2_text': 'TextEdit', 'link2_type': 'TextEdit', 'number': 'Range', 'type': 'TextEdit', 'geotracker_meta': 'TextEdit', });
 lyr_2005_R3_3.set('fieldImages', {'fid': 'TextEdit', 'name': 'TextEdit', 'cmt': 'TextEdit', 'desc': 'TextEdit', 'src': 'TextEdit', 'link1_href': 'TextEdit', 'link1_text': 'TextEdit', 'link1_type': 'TextEdit', 'link2_href': 'TextEdit', 'link2_text': 'TextEdit', 'link2_type': 'TextEdit', 'number': 'Range', 'type': 'TextEdit', 'geotracker_meta': 'TextEdit', });
@@ -188,6 +204,7 @@ lyr_505_R3_7.set('fieldImages', {'id': 'TextEdit', });
 lyr_505_R2_8.set('fieldImages', {'id': 'TextEdit', });
 lyr_505_R1_9.set('fieldImages', {'id': 'TextEdit', });
 lyr_labels_git_10.set('fieldImages', {'fid': 'TextEdit', 'Label': 'TextEdit', 'auxiliary_storage_labeling_positionx': 'Hidden', 'auxiliary_storage_labeling_positiony': 'Hidden', });
+lyr_img_5_05_roja_11.set('fieldImages', {'fid': 'TextEdit', 'photo': 'ExternalResource', 'filename': 'TextEdit', 'directory': 'ExternalResource', 'altitude': 'TextEdit', 'direction': 'TextEdit', 'rotation': 'Range', 'longitude': 'TextEdit', 'latitude': 'TextEdit', 'timestamp': 'DateTime', });
 lyr_2705_R2_1.set('fieldLabels', {'fid': 'no label', 'name': 'no label', 'cmt': 'no label', 'desc': 'no label', 'src': 'no label', 'link1_href': 'no label', 'link1_text': 'no label', 'link1_type': 'no label', 'link2_href': 'no label', 'link2_text': 'no label', 'link2_type': 'no label', 'number': 'no label', 'type': 'no label', 'geotracker_meta': 'no label', });
 lyr_2705_R1_2.set('fieldLabels', {'fid': 'no label', 'name': 'no label', 'cmt': 'no label', 'desc': 'no label', 'src': 'no label', 'link1_href': 'no label', 'link1_text': 'no label', 'link1_type': 'no label', 'link2_href': 'no label', 'link2_text': 'no label', 'link2_type': 'no label', 'number': 'no label', 'type': 'no label', 'geotracker_meta': 'no label', });
 lyr_2005_R3_3.set('fieldLabels', {'fid': 'no label', 'name': 'no label', 'cmt': 'no label', 'desc': 'no label', 'src': 'no label', 'link1_href': 'no label', 'link1_text': 'no label', 'link1_type': 'no label', 'link2_href': 'no label', 'link2_text': 'no label', 'link2_type': 'no label', 'number': 'no label', 'type': 'no label', 'geotracker_meta': 'no label', });
@@ -198,6 +215,7 @@ lyr_505_R3_7.set('fieldLabels', {'id': 'no label', });
 lyr_505_R2_8.set('fieldLabels', {'id': 'no label', });
 lyr_505_R1_9.set('fieldLabels', {'id': 'no label', });
 lyr_labels_git_10.set('fieldLabels', {'fid': 'no label', 'Label': 'inline label - always visible', });
-lyr_labels_git_10.on('precompose', function(evt) {
+lyr_img_5_05_roja_11.set('fieldLabels', {'fid': 'no label', 'photo': 'no label', 'filename': 'no label', 'directory': 'no label', 'altitude': 'no label', 'direction': 'no label', 'rotation': 'no label', 'longitude': 'no label', 'latitude': 'no label', 'timestamp': 'no label', });
+lyr_img_5_05_roja_11.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });
