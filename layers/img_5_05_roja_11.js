@@ -1,1 +1,1 @@
-var json_img_5_05_roja_11 = {"type":"FeatureCollection","name":"img_5_05_roja_11","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[]}
+var json_img_5_05_roja_11 = {"type":"FeatureCollection","name":"img_5_05_roja_11","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[{"type":"Feature","properties":{"ruta_web":"fotos/5_05/img_5_05_roja/b14_paseando.jpg"},"geometry":{"type":"Point","coordinates":[-0.707161111111111,38.273105555555553]}}]}
