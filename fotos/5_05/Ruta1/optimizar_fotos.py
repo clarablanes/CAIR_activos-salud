@@ -22,7 +22,7 @@ for archivo in os.listdir('.'):
             metadatos_gps = img.info.get('exif')
             
             # 1. Corregir la orientación si la foto está volcada
-            img = ImageOps.exif_transpose(img)
+            #img = ImageOps.exif_transpose(img)
             
             # 2. Redimensionar a 600px de ancho manteniendo la proporción
             ancho_max = 600
