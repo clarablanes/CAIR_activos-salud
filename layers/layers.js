@@ -215,7 +215,7 @@ lyr_505_R3_7.set('fieldLabels', {'id': 'no label', });
 lyr_505_R2_8.set('fieldLabels', {'id': 'no label', });
 lyr_505_R1_9.set('fieldLabels', {'id': 'no label', });
 lyr_labels_git_10.set('fieldLabels', {'fid': 'no label', 'Label': 'no label', });
-lyr_img_5_05_roja_11.set('fieldLabels', {'fid': 'no label', 'photo': 'no label', 'filename': 'no label', 'directory': 'no label', 'altitude': 'no label', 'direction': 'no label', 'rotation': 'no label', 'longitude': 'no label', 'latitude': 'no label', 'timestamp': 'no label', });
+lyr_img_5_05_roja_11.set('fieldLabels', {'fid': 'hidden field', 'photo': 'hidden field', 'filename': 'hidden field', 'directory': 'hidden field', 'altitude': 'hidden field', 'direction': 'hidden field', 'rotation': 'hidden field', 'longitude': 'hidden field', 'latitude': 'hidden field', 'timestamp': 'hidden field', });
 lyr_img_5_05_roja_11.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });
