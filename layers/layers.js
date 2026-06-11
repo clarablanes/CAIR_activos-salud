@@ -23,7 +23,7 @@ var lyr_2705_R2_1 = new ol.layer.Vector({
                 source:jsonSource_2705_R2_1, 
                 style: style_2705_R2_1,
                 popuplayertitle: '27-05_R2',
-                interactive: true,
+                interactive: false,
                 title: '<img src="styles/legend/2705_R2_1.png" /> 27-05_R2'
             });
 var format_2705_R1_2 = new ol.format.GeoJSON();
@@ -38,7 +38,7 @@ var lyr_2705_R1_2 = new ol.layer.Vector({
                 source:jsonSource_2705_R1_2, 
                 style: style_2705_R1_2,
                 popuplayertitle: '27-05_R1',
-                interactive: true,
+                interactive: false,
                 title: '<img src="styles/legend/2705_R1_2.png" /> 27-05_R1'
             });
 var format_2005_R3_3 = new ol.format.GeoJSON();
@@ -53,7 +53,7 @@ var lyr_2005_R3_3 = new ol.layer.Vector({
                 source:jsonSource_2005_R3_3, 
                 style: style_2005_R3_3,
                 popuplayertitle: '20-05_R3',
-                interactive: true,
+                interactive: false,
                 title: '<img src="styles/legend/2005_R3_3.png" /> 20-05_R3'
             });
 var format_2005_R2_4 = new ol.format.GeoJSON();
@@ -68,7 +68,7 @@ var lyr_2005_R2_4 = new ol.layer.Vector({
                 source:jsonSource_2005_R2_4, 
                 style: style_2005_R2_4,
                 popuplayertitle: '20-05_R2',
-                interactive: true,
+                interactive: false,
                 title: '<img src="styles/legend/2005_R2_4.png" /> 20-05_R2'
             });
 var format_2005_R1_5 = new ol.format.GeoJSON();
@@ -83,7 +83,7 @@ var lyr_2005_R1_5 = new ol.layer.Vector({
                 source:jsonSource_2005_R1_5, 
                 style: style_2005_R1_5,
                 popuplayertitle: '20-05_R1',
-                interactive: true,
+                interactive: false,
                 title: '<img src="styles/legend/2005_R1_5.png" /> 20-05_R1'
             });
 var format_505_R3_6 = new ol.format.GeoJSON();
@@ -98,7 +98,7 @@ var lyr_505_R3_6 = new ol.layer.Vector({
                 source:jsonSource_505_R3_6, 
                 style: style_505_R3_6,
                 popuplayertitle: '5-05_R3',
-                interactive: true,
+                interactive: false,
                 title: '<img src="styles/legend/505_R3_6.png" /> 5-05_R3'
             });
 var format_505_R2_7 = new ol.format.GeoJSON();
@@ -113,7 +113,7 @@ var lyr_505_R2_7 = new ol.layer.Vector({
                 source:jsonSource_505_R2_7, 
                 style: style_505_R2_7,
                 popuplayertitle: '5-05_R2',
-                interactive: true,
+                interactive: false,
                 title: '<img src="styles/legend/505_R2_7.png" /> 5-05_R2'
             });
 var format_505_R1_8 = new ol.format.GeoJSON();
@@ -128,7 +128,7 @@ var lyr_505_R1_8 = new ol.layer.Vector({
                 source:jsonSource_505_R1_8, 
                 style: style_505_R1_8,
                 popuplayertitle: '5-05_R1',
-                interactive: true,
+                interactive: false,
                 title: '<img src="styles/legend/505_R1_8.png" /> 5-05_R1'
             });
 var format_Ruta2_9 = new ol.format.GeoJSON();
