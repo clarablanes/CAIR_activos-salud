@@ -58,35 +58,10 @@
         <script src="./resources/ol-layerswitcher.js"></script>
         <script src="resources/photon-geocoder-autocomplete.min.js"></script>
         <script src="resources/olms.js"></script>
-        <script src="layers/2705_R2_1.js"></script><script src="layers/2705_R1_2.js"></script><script src="layers/2005_R3_3.js"></script><script src="layers/2005_R2_4.js"></script><script src="layers/2005_R1_5.js"></script><script src="layers/Ruta1_6.js"></script><script src="layers/505_R3_7.js"></script><script src="layers/505_R2_8.js"></script><script src="layers/505_R1_9.js"></script><script src="layers/labels_git_10.js"></script>
-        <script src="styles/2705_R2_1_style.js"></script><script src="styles/2705_R1_2_style.js"></script><script src="styles/2005_R3_3_style.js"></script><script src="styles/2005_R2_4_style.js"></script><script src="styles/2005_R1_5_style.js"></script><script src="styles/Ruta1_6_style.js"></script><script src="styles/505_R3_7_style.js"></script><script src="styles/505_R2_8_style.js"></script><script src="styles/505_R1_9_style.js"></script><script src="styles/labels_git_10_style.js"></script>
+        <script src="layers/2705_R2_1.js"></script><script src="layers/2705_R1_2.js"></script><script src="layers/2005_R3_3.js"></script><script src="layers/2005_R2_4.js"></script><script src="layers/2005_R1_5.js"></script><script src="layers/505_R3_6.js"></script><script src="layers/505_R2_7.js"></script><script src="layers/505_R1_8.js"></script><script src="layers/Ruta2_9.js"></script><script src="layers/Ruta1_10.js"></script><script src="layers/labels_git_11.js"></script>
+        <script src="styles/2705_R2_1_style.js"></script><script src="styles/2705_R1_2_style.js"></script><script src="styles/2005_R3_3_style.js"></script><script src="styles/2005_R2_4_style.js"></script><script src="styles/2005_R1_5_style.js"></script><script src="styles/505_R3_6_style.js"></script><script src="styles/505_R2_7_style.js"></script><script src="styles/505_R1_8_style.js"></script><script src="styles/Ruta2_9_style.js"></script><script src="styles/Ruta1_10_style.js"></script><script src="styles/labels_git_11_style.js"></script>
         <script src="./layers/layers.js" type="text/javascript"></script> 
         <script src="./resources/Autolinker.min.js"></script>
-        <script src="./resources/qgis2web.js"></script>    
-        
-        <script>
-        (function() {
-            var isTouchDevice = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
-            
-            if (isTouchDevice) {
-                setTimeout(function() {
-                    if (typeof map !== 'undefined' && typeof map.getListeners === 'function') {
-                        // Extraemos las funciones que qgis2web asignó al pasar el ratón (pointermove)
-                        var listeners = map.getListeners('pointermove');
-                        if (listeners && listeners.length > 0) {
-                            var hoverFunctions = Array.prototype.slice.call(listeners);
-                            
-                            hoverFunctions.forEach(function(listener) {
-                                // Las clonamos y reasignamos al evento 'singleclick' (clic/tap de pantalla)
-                                map.on('singleclick', listener);
-                                // Las eliminamos del movimiento del ratón para que no se congelen en móvil
-                                map.un('pointermove', listener);
-                            });
-                        }
-                    }
-                }, 1000); 
-            }
-        })();
-        </script>
+        <script src="./resources/qgis2web.js"></script>        
     </body>
 </html>
