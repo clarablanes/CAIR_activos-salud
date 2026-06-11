@@ -228,8 +228,8 @@ lyr_505_R3_6.set('fieldLabels', {'id': 'no label', });
 lyr_505_R2_7.set('fieldLabels', {'id': 'no label', });
 lyr_505_R1_8.set('fieldLabels', {'id': 'header label - visible with data', });
 lyr_Ruta3_9.set('fieldLabels', {'TITULO': 'inline label - always visible', 'ruta_web': 'no label', });
-lyr_Ruta2_10.set('fieldLabels', {'TITULO': 'inline label - always visible', 'ruta_web': 'no label', });
-lyr_Ruta1_11.set('fieldLabels', {'TITULO': 'inline label - always visible', 'ruta_web': 'no label', });
+lyr_Ruta2_10.set('fieldLabels', {'TITULO': 'no label', 'ruta_web': 'no label', });
+lyr_Ruta1_11.set('fieldLabels', {'TITULO': 'no label', 'ruta_web': 'no label', });
 lyr_labels_git_12.set('fieldLabels', {'fid': 'no label', 'Label': 'no label', });
 lyr_labels_git_12.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
