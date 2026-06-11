@@ -1,7 +1,7 @@
 var size = 0;
 var placement = 'point';
 
-var style_labels_git_10 = function(feature, resolution){
+var style_labels_git_12 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
