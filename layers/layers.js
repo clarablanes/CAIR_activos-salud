@@ -3,6 +3,7 @@ var wms_layers = [];
 
         var lyr_OpenStreetMap_0 = new ol.layer.Tile({
             'title': 'OpenStreetMap',
+            'type':'base',
             'opacity': 0.500000,
             
             
@@ -202,14 +203,14 @@ lyr_Ruta2_9.set('fieldImages', {'fid': 'Hidden', 'photo': 'Hidden', 'filename': 
 lyr_Ruta1_10.set('fieldImages', {'fid': 'Hidden', 'photo': 'Hidden', 'filename': 'Hidden', 'directory': 'Hidden', 'altitude': 'Hidden', 'direction': 'Hidden', 'rotation': 'Hidden', 'longitude': 'Hidden', 'latitude': 'Hidden', 'timestamp': 'Hidden', 'TITULO': 'TextEdit', 'ruta_web': 'ExternalResource', });
 lyr_labels_git_11.set('fieldImages', {'fid': 'TextEdit', 'Label': 'TextEdit', 'auxiliary_storage_labeling_positionx': 'Hidden', 'auxiliary_storage_labeling_positiony': 'Hidden', });
 lyr_2705_R2_1.set('fieldLabels', {'fid': 'no label', 'name': 'no label', 'cmt': 'no label', 'desc': 'no label', 'src': 'no label', 'link1_href': 'no label', 'link1_text': 'no label', 'link1_type': 'no label', 'link2_href': 'no label', 'link2_text': 'no label', 'link2_type': 'no label', 'number': 'no label', 'type': 'no label', 'geotracker_meta': 'no label', });
-lyr_2705_R1_2.set('fieldLabels', {'fid': 'no label', 'name': 'no label', 'cmt': 'no label', 'desc': 'no label', 'src': 'no label', 'link1_href': 'no label', 'link1_text': 'no label', 'link1_type': 'no label', 'link2_href': 'no label', 'link2_text': 'no label', 'link2_type': 'no label', 'number': 'no label', 'type': 'no label', 'geotracker_meta': 'no label', });
+lyr_2705_R1_2.set('fieldLabels', {'fid': 'no label', 'name': 'no label', 'cmt': 'no label', 'desc': 'no label', 'src': 'no label', 'link1_href': 'no label', 'link1_text': 'no label', 'link1_type': 'no label', 'link2_href': 'no label', 'link2_text': 'no label', 'link2_type': 'header label - visible with data', 'number': 'no label', 'type': 'no label', 'geotracker_meta': 'no label', });
 lyr_2005_R3_3.set('fieldLabels', {'fid': 'no label', 'name': 'no label', 'cmt': 'no label', 'desc': 'no label', 'src': 'no label', 'link1_href': 'no label', 'link1_text': 'no label', 'link1_type': 'no label', 'link2_href': 'no label', 'link2_text': 'no label', 'link2_type': 'no label', 'number': 'no label', 'type': 'no label', 'geotracker_meta': 'no label', });
 lyr_2005_R2_4.set('fieldLabels', {'fid': 'no label', 'name': 'no label', 'cmt': 'no label', 'desc': 'no label', 'src': 'no label', 'link1_href': 'no label', 'link1_text': 'no label', 'link1_type': 'no label', 'link2_href': 'no label', 'link2_text': 'no label', 'link2_type': 'no label', 'number': 'no label', 'type': 'no label', 'geotracker_meta': 'no label', 'Ruta': 'no label', 'auxiliary_storage_labeling_lineanchorpercent': 'no label', 'auxiliary_storage_labeling_lineanchorclipping': 'no label', 'auxiliary_storage_labeling_lineanchortype': 'no label', 'auxiliary_storage_labeling_lineanchortextpoint': 'no label', });
 lyr_2005_R1_5.set('fieldLabels', {'fid': 'no label', 'name': 'no label', 'cmt': 'no label', 'desc': 'no label', 'src': 'no label', 'link1_href': 'no label', 'link1_text': 'no label', 'link1_type': 'no label', 'link2_href': 'no label', 'link2_text': 'no label', 'link2_type': 'no label', 'number': 'no label', 'type': 'no label', 'geotracker_meta': 'no label', 'Ruta': 'no label', });
 lyr_505_R3_6.set('fieldLabels', {'id': 'no label', });
 lyr_505_R2_7.set('fieldLabels', {'id': 'no label', });
-lyr_505_R1_8.set('fieldLabels', {'id': 'no label', });
-lyr_Ruta2_9.set('fieldLabels', {'TITULO': 'inline label - visible with data', 'ruta_web': 'no label', });
+lyr_505_R1_8.set('fieldLabels', {'id': 'header label - visible with data', });
+lyr_Ruta2_9.set('fieldLabels', {'TITULO': 'inline label - visible with data', 'ruta_web': 'header label - visible with data', });
 lyr_Ruta1_10.set('fieldLabels', {'TITULO': 'inline label - always visible', 'ruta_web': 'no label', });
 lyr_labels_git_11.set('fieldLabels', {'fid': 'no label', 'Label': 'no label', });
 lyr_labels_git_11.on('precompose', function(evt) {
