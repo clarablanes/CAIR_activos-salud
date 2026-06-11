@@ -11,7 +11,7 @@ for archivo in os.listdir('.'):
     nombre, extension = os.path.splitext(archivo)
     ext_lower = extension.lower()
     
-    # Filtramos por los formatos válidos
+    # Filtramos por los formatos válidos (pesca .heic, .jpg, .jpeg, .JPEG, etc.)
     if ext_lower in ['.heif', '.heic', '.jpg', '.jpeg']:
         print(f"📸 Procesando: {archivo}")
         
@@ -22,7 +22,6 @@ for archivo in os.listdir('.'):
             img = ImageOps.exif_transpose(img)
             
             # 2. Extraer los metadatos EXIF modificados tras el transpose
-            # Al hacer el transpose, Pillow ya resetea la orientación internamente en 'img.getexif()'
             metadatos_exif = img.getexif()
             
             # 3. Redimensionar a 600px de ancho manteniendo la proporción
@@ -42,15 +41,17 @@ for archivo in os.listdir('.'):
             else:
                 img.save(f"{nombre}.JPG", "JPEG", quality=75)
             
-            # --- SECCIÓN DE LIMPIEZA ---
-            # Si el archivo original era un HEIC/HEIF, lo borramos ahora que ya tenemos el .JPG
+            # --- SECCIÓN DE LIMPIEZA COMPLETAMENTE OPTIMIZADA ---
+            # Si el archivo original era un HEIC/HEIF, lo borramos
             if ext_lower in ['.heif', '.heic']:
                 os.remove(archivo)
                 print(f"   🗑️ Original HEIC eliminado: {archivo}")
                 
-            # Si el archivo original era .jpg o .jpeg en minúsculas (y no el nuevo .JPG), lo borramos
-            elif extension in ['.jpg', '.jpeg']:
+            # Si el archivo original NO se llamaba exactamente '.JPG' en mayúsculas,
+            # lo borramos para evitar duplicados (así limpia .jpg, .jpeg y .JPEG)
+            elif extension != '.JPG':
                 os.remove(archivo)
+                print(f"   🗑️ Original antiguo eliminado: {archivo}")
                 
         except Exception as e:
             print(f"⚠️ Error al procesar {archivo}: {e}")
