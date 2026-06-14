@@ -1,7 +1,7 @@
 var size = 0;
 var placement = 'point';
 
-var style_2705_R1_2 = function(feature, resolution){
+var style_Ruta8_9 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
@@ -9,19 +9,20 @@ var style_2705_R1_2 = function(feature, resolution){
     
     var labelText = ""; 
     var value = feature.get("");
-    var labelFont = "15.600000000000001px \'Al Bayan\', sans-serif";
-    var labelFill = "#323232";
+    var labelFont = "10px, sans-serif";
+    var labelFill = "#000000";
     var bufferColor = "";
     var bufferWidth = 0;
     var textAlign = "left";
     var offsetX = 0;
     var offsetY = 0;
-    var placement = 'line';
+    var placement = 'point';
     if ("" !== null) {
         labelText = String("");
     }
     var style = [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(20,128,60,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 2.508}),
+        image: new ol.style.Circle({radius: 4.0 + size,
+            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.0}), fill: new ol.style.Fill({color: 'rgba(250,146,13,1.0)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
