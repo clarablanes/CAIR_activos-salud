@@ -1,7 +1,7 @@
 var size = 0;
 var placement = 'point';
 
-var style_Ruta8_9 = function(feature, resolution){
+var style_Ruta8_2ruta8_9 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
@@ -22,7 +22,7 @@ var style_Ruta8_9 = function(feature, resolution){
     }
     var style = [ new ol.style.Style({
         image: new ol.style.Circle({radius: 4.0 + size,
-            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(249,124,8,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.0}), fill: new ol.style.Fill({color: 'rgba(231,113,72,1.0)'})}),
+            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(255,176,5,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.0}), fill: new ol.style.Fill({color: 'rgba(229,182,54,1.0)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
