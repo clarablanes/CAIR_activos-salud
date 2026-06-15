@@ -132,20 +132,20 @@ var lyr_505_R3_8 = new ol.layer.Vector({
                 interactive: false,
                 title: '<img src="styles/legend/505_R3_8.png" /> 5-05_R3'
             });
-var format_Ruta8_2ruta8_9 = new ol.format.GeoJSON();
-var features_Ruta8_2ruta8_9 = format_Ruta8_2ruta8_9.readFeatures(json_Ruta8_2ruta8_9, 
+var format_Ruta8_9 = new ol.format.GeoJSON();
+var features_Ruta8_9 = format_Ruta8_9.readFeatures(json_Ruta8_9, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_Ruta8_2ruta8_9 = new ol.source.Vector({
+var jsonSource_Ruta8_9 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_Ruta8_2ruta8_9.addFeatures(features_Ruta8_2ruta8_9);
-var lyr_Ruta8_2ruta8_9 = new ol.layer.Vector({
+jsonSource_Ruta8_9.addFeatures(features_Ruta8_9);
+var lyr_Ruta8_9 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_Ruta8_2ruta8_9, 
-                style: style_Ruta8_2ruta8_9,
-                popuplayertitle: 'Ruta8_2 — ruta8',
+                source:jsonSource_Ruta8_9, 
+                style: style_Ruta8_9,
+                popuplayertitle: 'Ruta8',
                 interactive: true,
-                title: '<img src="styles/legend/Ruta8_2ruta8_9.png" /> Ruta8_2 — ruta8'
+                title: '<img src="styles/legend/Ruta8_9.png" /> Ruta8'
             });
 var format_Ruta7_10 = new ol.format.GeoJSON();
 var features_Ruta7_10 = format_Ruta7_10.readFeatures(json_Ruta7_10, 
@@ -268,8 +268,8 @@ var lyr_labels_git_17 = new ol.layer.Vector({
                 title: '<img src="styles/legend/labels_git_17.png" /> labels_git'
             });
 
-lyr_OpenStreetMap_0.setVisible(true);lyr_2705_R2_1.setVisible(true);lyr_2705_R1_2.setVisible(true);lyr_2005_R2_3.setVisible(true);lyr_2005_R3_4.setVisible(true);lyr_2005_R1_5.setVisible(true);lyr_505_R2_6.setVisible(true);lyr_505_R1_7.setVisible(true);lyr_505_R3_8.setVisible(true);lyr_Ruta8_2ruta8_9.setVisible(true);lyr_Ruta7_10.setVisible(true);lyr_Ruta6_11.setVisible(true);lyr_Ruta5_12.setVisible(true);lyr_Ruta4_13.setVisible(true);lyr_Ruta3_14.setVisible(true);lyr_Ruta2_15.setVisible(true);lyr_Ruta1_16.setVisible(true);lyr_labels_git_17.setVisible(true);
-var layersList = [lyr_OpenStreetMap_0,lyr_2705_R2_1,lyr_2705_R1_2,lyr_2005_R2_3,lyr_2005_R3_4,lyr_2005_R1_5,lyr_505_R2_6,lyr_505_R1_7,lyr_505_R3_8,lyr_Ruta8_2ruta8_9,lyr_Ruta7_10,lyr_Ruta6_11,lyr_Ruta5_12,lyr_Ruta4_13,lyr_Ruta3_14,lyr_Ruta2_15,lyr_Ruta1_16,lyr_labels_git_17];
+lyr_OpenStreetMap_0.setVisible(true);lyr_2705_R2_1.setVisible(true);lyr_2705_R1_2.setVisible(true);lyr_2005_R2_3.setVisible(true);lyr_2005_R3_4.setVisible(true);lyr_2005_R1_5.setVisible(true);lyr_505_R2_6.setVisible(true);lyr_505_R1_7.setVisible(true);lyr_505_R3_8.setVisible(true);lyr_Ruta8_9.setVisible(true);lyr_Ruta7_10.setVisible(true);lyr_Ruta6_11.setVisible(true);lyr_Ruta5_12.setVisible(true);lyr_Ruta4_13.setVisible(true);lyr_Ruta3_14.setVisible(true);lyr_Ruta2_15.setVisible(true);lyr_Ruta1_16.setVisible(true);lyr_labels_git_17.setVisible(true);
+var layersList = [lyr_OpenStreetMap_0,lyr_2705_R2_1,lyr_2705_R1_2,lyr_2005_R2_3,lyr_2005_R3_4,lyr_2005_R1_5,lyr_505_R2_6,lyr_505_R1_7,lyr_505_R3_8,lyr_Ruta8_9,lyr_Ruta7_10,lyr_Ruta6_11,lyr_Ruta5_12,lyr_Ruta4_13,lyr_Ruta3_14,lyr_Ruta2_15,lyr_Ruta1_16,lyr_labels_git_17];
 lyr_2705_R2_1.set('fieldAliases', {'fid': 'fid', 'name': 'name', 'cmt': 'cmt', 'desc': 'desc', 'src': 'src', 'link1_href': 'link1_href', 'link1_text': 'link1_text', 'link1_type': 'link1_type', 'link2_href': 'link2_href', 'link2_text': 'link2_text', 'link2_type': 'link2_type', 'number': 'number', 'type': 'type', 'geotracker_meta': 'geotracker_meta', });
 lyr_2705_R1_2.set('fieldAliases', {'fid': 'fid', 'name': 'name', 'cmt': 'cmt', 'desc': 'desc', 'src': 'src', 'link1_href': 'link1_href', 'link1_text': 'link1_text', 'link1_type': 'link1_type', 'link2_href': 'link2_href', 'link2_text': 'link2_text', 'link2_type': 'link2_type', 'number': 'number', 'type': 'type', 'geotracker_meta': 'geotracker_meta', });
 lyr_2005_R2_3.set('fieldAliases', {'fid': 'fid', 'name': 'name', 'cmt': 'cmt', 'desc': 'desc', 'src': 'src', 'link1_href': 'link1_href', 'link1_text': 'link1_text', 'link1_type': 'link1_type', 'link2_href': 'link2_href', 'link2_text': 'link2_text', 'link2_type': 'link2_type', 'number': 'number', 'type': 'type', 'geotracker_meta': 'geotracker_meta', 'Ruta': 'Ruta', 'auxiliary_storage_labeling_positionx': 'auxiliary_storage_labeling_positionx', 'auxiliary_storage_labeling_positiony': 'auxiliary_storage_labeling_positiony', 'auxiliary_storage_labeling_lineanchorpercent': 'auxiliary_storage_labeling_lineanchorpercent', 'auxiliary_storage_labeling_lineanchorclipping': 'auxiliary_storage_labeling_lineanchorclipping', 'auxiliary_storage_labeling_lineanchortype': 'auxiliary_storage_labeling_lineanchortype', 'auxiliary_storage_labeling_lineanchortextpoint': 'auxiliary_storage_labeling_lineanchortextpoint', });
@@ -278,7 +278,7 @@ lyr_2005_R1_5.set('fieldAliases', {'fid': 'fid', 'name': 'name', 'cmt': 'cmt', '
 lyr_505_R2_6.set('fieldAliases', {'id': 'id', });
 lyr_505_R1_7.set('fieldAliases', {'id': 'id', });
 lyr_505_R3_8.set('fieldAliases', {'id': 'id', });
-lyr_Ruta8_2ruta8_9.set('fieldAliases', {'fid': 'fid', 'photo': 'photo', 'filename': 'filename', 'directory': 'directory', 'altitude': 'altitude', 'direction': 'direction', 'rotation': 'rotation', 'longitude': 'longitude', 'latitude': 'latitude', 'timestamp': 'timestamp', 'TITULO': 'TITULO', 'ruta_web': 'ruta_web', 'color_marco': 'color_marco', 'pepita_oro': 'pepita_oro', });
+lyr_Ruta8_9.set('fieldAliases', {'fid': 'fid', 'photo': 'photo', 'filename': 'filename', 'directory': 'directory', 'altitude': 'altitude', 'direction': 'direction', 'rotation': 'rotation', 'longitude': 'longitude', 'latitude': 'latitude', 'timestamp': 'timestamp', 'TITULO': 'TITULO', 'color_marco': 'color_marco', 'ruta_web': 'ruta_web', 'pepita_oro': 'pepita_oro', });
 lyr_Ruta7_10.set('fieldAliases', {'fid': 'fid', 'photo': 'photo', 'filename': 'filename', 'directory': 'directory', 'altitude': 'altitude', 'direction': 'direction', 'rotation': 'rotation', 'longitude': 'longitude', 'latitude': 'latitude', 'timestamp': 'timestamp', 'TITULO': 'TITULO', 'ruta_web': 'ruta_web', });
 lyr_Ruta6_11.set('fieldAliases', {'fid': 'fid', 'photo': 'photo', 'filename': 'filename', 'directory': 'directory', 'altitude': 'altitude', 'direction': 'direction', 'rotation': 'rotation', 'longitude': 'longitude', 'latitude': 'latitude', 'timestamp': 'timestamp', 'TITULO': 'TITULO', 'ruta_web': 'ruta_web', });
 lyr_Ruta5_12.set('fieldAliases', {'fid': 'fid', 'photo': 'photo', 'filename': 'filename', 'directory': 'directory', 'altitude': 'altitude', 'direction': 'direction', 'rotation': 'rotation', 'longitude': 'longitude', 'latitude': 'latitude', 'timestamp': 'timestamp', 'TITULO': 'TITULO', 'ruta_web': 'ruta_web', });
@@ -295,7 +295,7 @@ lyr_2005_R1_5.set('fieldImages', {'fid': 'TextEdit', 'name': 'TextEdit', 'cmt': 
 lyr_505_R2_6.set('fieldImages', {'id': 'TextEdit', });
 lyr_505_R1_7.set('fieldImages', {'id': 'TextEdit', });
 lyr_505_R3_8.set('fieldImages', {'id': 'TextEdit', });
-lyr_Ruta8_2ruta8_9.set('fieldImages', {'fid': 'Hidden', 'photo': 'Hidden', 'filename': 'Hidden', 'directory': 'Hidden', 'altitude': 'Hidden', 'direction': 'Hidden', 'rotation': 'Hidden', 'longitude': 'Hidden', 'latitude': 'Hidden', 'timestamp': 'Hidden', 'TITULO': 'TextEdit', 'ruta_web': 'ExternalResource', 'color_marco': 'Hidden', 'pepita_oro': 'TextEdit', });
+lyr_Ruta8_9.set('fieldImages', {'fid': 'Hidden', 'photo': 'Hidden', 'filename': 'Hidden', 'directory': 'Hidden', 'altitude': 'Hidden', 'direction': 'Hidden', 'rotation': 'Hidden', 'longitude': 'Hidden', 'latitude': 'Hidden', 'timestamp': 'Hidden', 'TITULO': 'TextEdit', 'color_marco': 'Hidden', 'ruta_web': 'ExternalResource', 'pepita_oro': 'TextEdit', });
 lyr_Ruta7_10.set('fieldImages', {'fid': 'Hidden', 'photo': 'Hidden', 'filename': 'Hidden', 'directory': 'Hidden', 'altitude': 'Hidden', 'direction': 'Hidden', 'rotation': 'Hidden', 'longitude': 'Hidden', 'latitude': 'Hidden', 'timestamp': 'Hidden', 'TITULO': 'TextEdit', 'ruta_web': 'ExternalResource', });
 lyr_Ruta6_11.set('fieldImages', {'fid': 'Hidden', 'photo': 'Hidden', 'filename': 'Hidden', 'directory': 'Hidden', 'altitude': 'Hidden', 'direction': 'Hidden', 'rotation': 'Hidden', 'longitude': 'Hidden', 'latitude': 'Hidden', 'timestamp': 'Hidden', 'TITULO': 'TextEdit', 'ruta_web': 'ExternalResource', });
 lyr_Ruta5_12.set('fieldImages', {'fid': 'Hidden', 'photo': 'Hidden', 'filename': 'Hidden', 'directory': 'Hidden', 'altitude': 'Hidden', 'direction': 'Hidden', 'rotation': 'Hidden', 'longitude': 'Hidden', 'latitude': 'Hidden', 'timestamp': 'Hidden', 'TITULO': 'TextEdit', 'ruta_web': 'ExternalResource', });
@@ -312,7 +312,7 @@ lyr_2005_R1_5.set('fieldLabels', {'fid': 'no label', 'name': 'no label', 'cmt': 
 lyr_505_R2_6.set('fieldLabels', {'id': 'no label', });
 lyr_505_R1_7.set('fieldLabels', {'id': 'header label - visible with data', });
 lyr_505_R3_8.set('fieldLabels', {'id': 'no label', });
-lyr_Ruta8_2ruta8_9.set('fieldLabels', {'TITULO': 'no label', 'ruta_web': 'no label', 'pepita_oro': 'no label', });
+lyr_Ruta8_9.set('fieldLabels', {'TITULO': 'no label', 'ruta_web': 'no label', 'pepita_oro': 'no label', });
 lyr_Ruta7_10.set('fieldLabels', {'TITULO': 'no label', 'ruta_web': 'no label', });
 lyr_Ruta6_11.set('fieldLabels', {'TITULO': 'no label', 'ruta_web': 'no label', });
 lyr_Ruta5_12.set('fieldLabels', {'TITULO': 'no label', 'ruta_web': 'no label', });
