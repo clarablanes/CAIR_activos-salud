@@ -22,7 +22,7 @@ var style_Ruta8_9 = function(feature, resolution){
     }
     var style = [ new ol.style.Style({
         image: new ol.style.Circle({radius: 4.0 + size,
-            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.0}), fill: new ol.style.Fill({color: 'rgba(250,146,13,1.0)'})}),
+            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(247,126,9,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.0}), fill: new ol.style.Fill({color: 'rgba(238,135,14,0.9019607843137255)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
