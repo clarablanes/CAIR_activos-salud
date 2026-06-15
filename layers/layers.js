@@ -295,7 +295,7 @@ lyr_2005_R1_5.set('fieldImages', {'fid': 'TextEdit', 'name': 'TextEdit', 'cmt': 
 lyr_505_R2_6.set('fieldImages', {'id': 'TextEdit', });
 lyr_505_R1_7.set('fieldImages', {'id': 'TextEdit', });
 lyr_505_R3_8.set('fieldImages', {'id': 'TextEdit', });
-lyr_Ruta8_9.set('fieldImages', {'fid': 'Hidden', 'photo': 'Hidden', 'filename': 'Hidden', 'directory': 'Hidden', 'altitude': 'Hidden', 'direction': 'Hidden', 'rotation': 'Hidden', 'longitude': 'Hidden', 'latitude': 'Hidden', 'timestamp': 'Hidden', 'TITULO': 'TextEdit', 'color_marco': 'Hidden', 'ruta_web': 'ExternalResource', 'pepita_oro': 'TextEdit', });
+lyr_Ruta8_9.set('fieldImages', {'fid': 'Hidden', 'photo': 'Hidden', 'filename': 'Hidden', 'directory': 'Hidden', 'altitude': 'Hidden', 'direction': 'Hidden', 'rotation': 'Hidden', 'longitude': 'Hidden', 'latitude': 'Hidden', 'timestamp': 'Hidden', 'TITULO': 'TextEdit', 'color_marco': 'TextEdit', 'ruta_web': 'ExternalResource', 'pepita_oro': 'TextEdit', });
 lyr_Ruta7_10.set('fieldImages', {'fid': 'Hidden', 'photo': 'Hidden', 'filename': 'Hidden', 'directory': 'Hidden', 'altitude': 'Hidden', 'direction': 'Hidden', 'rotation': 'Hidden', 'longitude': 'Hidden', 'latitude': 'Hidden', 'timestamp': 'Hidden', 'TITULO': 'TextEdit', 'ruta_web': 'ExternalResource', });
 lyr_Ruta6_11.set('fieldImages', {'fid': 'Hidden', 'photo': 'Hidden', 'filename': 'Hidden', 'directory': 'Hidden', 'altitude': 'Hidden', 'direction': 'Hidden', 'rotation': 'Hidden', 'longitude': 'Hidden', 'latitude': 'Hidden', 'timestamp': 'Hidden', 'TITULO': 'TextEdit', 'ruta_web': 'ExternalResource', });
 lyr_Ruta5_12.set('fieldImages', {'fid': 'Hidden', 'photo': 'Hidden', 'filename': 'Hidden', 'directory': 'Hidden', 'altitude': 'Hidden', 'direction': 'Hidden', 'rotation': 'Hidden', 'longitude': 'Hidden', 'latitude': 'Hidden', 'timestamp': 'Hidden', 'TITULO': 'TextEdit', 'ruta_web': 'ExternalResource', });
@@ -312,7 +312,7 @@ lyr_2005_R1_5.set('fieldLabels', {'fid': 'no label', 'name': 'no label', 'cmt': 
 lyr_505_R2_6.set('fieldLabels', {'id': 'no label', });
 lyr_505_R1_7.set('fieldLabels', {'id': 'header label - visible with data', });
 lyr_505_R3_8.set('fieldLabels', {'id': 'no label', });
-lyr_Ruta8_9.set('fieldLabels', {'TITULO': 'no label', 'ruta_web': 'no label', 'pepita_oro': 'no label', });
+lyr_Ruta8_9.set('fieldLabels', {'TITULO': 'inline label - always visible', 'color_marco': 'inline label - always visible', 'ruta_web': 'inline label - always visible', 'pepita_oro': 'inline label - always visible', });
 lyr_Ruta7_10.set('fieldLabels', {'TITULO': 'no label', 'ruta_web': 'no label', });
 lyr_Ruta6_11.set('fieldLabels', {'TITULO': 'no label', 'ruta_web': 'no label', });
 lyr_Ruta5_12.set('fieldLabels', {'TITULO': 'no label', 'ruta_web': 'no label', });

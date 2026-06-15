@@ -33,6 +33,24 @@
             background-color: rgba(255,255,255,.4) !important;
             padding: 2px !important;
         } 
+        /* Limpieza de márgenes por defecto del popup de OpenLayers para evitar duplicados y cajas negras */
+        .ol-popup {
+            padding: 0px !important;
+            border: none !important;
+            background-color: transparent !important;
+            box-shadow: none !important;
+        }
+        #popup-content {
+            padding: 0px !important;
+        }
+        .ol-popup-closer {
+            top: 12px !important;
+            right: 12px !important;
+            color: #333 !important;
+            z-index: 9999;
+            font-weight: bold;
+            text-decoration: none;
+        }
         </style>
 
         <style>
@@ -63,5 +81,63 @@
         <script src="./layers/layers.js" type="text/javascript"></script> 
         <script src="./resources/Autolinker.min.js"></script>
         <script src="./resources/qgis2web.js"></script>        
+
+        <script>
+          document.addEventListener("DOMContentLoaded", function() {
+            var observer = new MutationObserver(function(mutations) {
+              mutations.forEach(function(mutation) {
+                var popupContent = document.getElementById('popup-content');
+                
+                // Si el popup está abierto y tiene la tabla nativa de qgis2web sin transformar
+                if (popupContent && popupContent.querySelector('table') && !popupContent.querySelector('.mi-marco-personalizado')) {
+                  
+                  // Mapeamos los campos de la tabla
+                  var filas = popupContent.querySelectorAll('tr');
+                  var datos = {};
+                  filas.forEach(function(fila) {
+                    var th = fila.querySelector('th');
+                    var td = fila.querySelector('td');
+                    if (th && td) {
+                      datos[th.textContent.trim()] = td.textContent.trim();
+                    }
+                  });
+
+                  // Buscamos tus variables clave independientemente de si qgis2web les metió etiquetas o no
+                  var titulo = datos['TITULO'] || popupContent.innerText.split('\n')[0] || 'Sin título';
+                  var frase = datos['pepita_oro'] || '';
+                  var foto = datos['ruta_web'] || datos['photo'] || '';
+                  var color = datos['color_marco'] || 'blue';
+
+                  // Si la frase se quedó unida sin espacios por culpa del exportador, intentamos usar el texto original recuperando la legibilidad
+                  if (frase && !frase.includes(' ')) {
+                    // Si el texto nativo original del popup conserva espacios en alguna celda, la rescatamos
+                    filas.forEach(function(fila) {
+                      if (fila.innerText.toLowerCase().includes('sombra') || fila.innerText.toLowerCase().includes('ojos')) {
+                        var td = fila.querySelector('td');
+                        if (td) frase = td.textContent.trim();
+                      }
+                    });
+                  }
+
+                  // RECREAMOS TU DISEÑO EXACTO DE LA PRIMERA CAPTURA
+                  var nuevoHTML = `
+                    <div class="mi-marco-personalizado" style="max-width: 280px; text-align: center; overflow: hidden; padding: 12px; border-radius: 10px; box-sizing: border-box; border: 30px solid ${color}; background-color: white; font-family: sans-serif;">
+                      <h3 style="margin: 10px 0 6px 0; font-size: 15px; color: #333; font-weight: bold; font-family: sans-serif;">${titulo}</h3>
+                      <p style="margin: 0 0 12px 0; font-size: 11px; color: #666; text-transform: uppercase; letter-spacing: 1px; font-family: sans-serif; font-weight: bold; line-height: 1.4;">
+                        "${frase}"
+                      </p>
+                      <img src="${foto}" style="width: 100%; max-height: 160px; object-fit: contain; border-radius: 4px; display: block; margin: 0 auto 10px auto;" />
+                    </div>
+                  `;
+                  
+                  // Inyectamos el diseño limpio sustituyendo la estructura rota
+                  popupContent.innerHTML = nuevoHTML;
+                }
+              });
+            });
+            
+            observer.observe(document.body, { childList: true, subtree: true });
+          });
+        </script>
     </body>
 </html>
